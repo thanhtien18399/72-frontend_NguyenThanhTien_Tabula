@@ -1,0 +1,82 @@
+@import "../common/base";
+@import "../theme/variable";
+@import "../theme/mixins";
+.footer {
+    padding: 150px 0;
+    background-image: url(../img/footer_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    font-size: 14px;
+
+    .contact {
+        @include flex(flex-start,space-around ,wrap );
+        .content-2 {
+            a {
+                color: $cl-4;
+                font-size: 14px;
+                display: block;
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    .btn-footer {
+        padding-top: 30px;
+
+        a{
+            text-align: center;
+            margin-top: 10px;
+            @include Button(transparent,
+            none ,
+            none ,
+            $cl-4 ,
+            20px 90px );
+
+        }
+
+        .yourEmail {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: none;
+        }
+
+        .sub {
+            text-align: center;
+            color: black;
+            box-shadow: 0 0 0 3em $cl-4 inset;
+
+            &:hover {
+                box-shadow: 0 0 0 1px $cl-4 inset;
+                color: $cl-4;
+                background: transparent;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 25px;
+        font-weight: 700;
+        color: $cl-4;
+    }
+
+    span {
+        display: block;
+        padding: 10px 0;
+        color:$cl-4;
+
+        i {
+            color: $cl-4;
+            padding-right: 10px;
+
+            &:hover {
+                color: $cl-2;
+            }
+        }
+    }
+
+}

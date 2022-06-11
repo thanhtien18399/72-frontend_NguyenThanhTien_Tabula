@@ -1,0 +1,53 @@
+@import "../common/base";
+@import "../theme/variable";
+@import "../theme/mixins";
+.header {
+    position: relative;
+    .logo {
+        z-index: 3;
+
+        img {
+            width: 80px;
+        }
+    }
+
+    .menu-list a {
+        font-size: 14px;
+        color: $cl-2;
+        font-weight: 600;
+        padding-right: 40px;
+    }
+
+    .menu-list a:hover {
+        color: $cl-1;
+    }
+
+    .topBarInMenu a {
+        margin-right: 10px;
+
+        &:hover {
+            color: $cl-1;
+        }
+    }
+
+    .topBarInMenu .btn {
+        padding: 0;
+        margin-right: 15px;
+
+        a {
+            font-size: 14px;
+            padding: 15px 15px;
+        }
+
+    }
+
+    .bg-top {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        img {
+            @include Img (auto);
+        }
+    }
+}

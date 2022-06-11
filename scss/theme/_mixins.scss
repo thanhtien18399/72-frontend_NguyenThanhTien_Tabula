@@ -1,0 +1,28 @@
+@mixin Button ($bg , $border, $boxShadow, $color,$padding) {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 1;
+    border: $border;
+    border-radius: 50px;
+    background: $bg;
+    padding: $padding;
+    box-shadow: $boxShadow;
+    color: $color;
+    transition: all 0.3s ease;
+}
+@mixin Img($height) {
+    width: 100%;
+    height: $height;
+    display: block;
+
+    user-select: none;
+}
+@mixin flex($aline ,$justify,$wrap) {
+    display: flex;
+    align-items: $aline;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
